@@ -231,6 +231,6 @@ struct CommandIdTag;
 //! Identifies a menu command or macro. Case-insensitive comparison
 using CommandID = TaggedIdentifier< CommandIdTag, false >;
 using CommandIDs = std::vector<CommandID>;
-
+using ManualPageID = wxString;
 #endif
 

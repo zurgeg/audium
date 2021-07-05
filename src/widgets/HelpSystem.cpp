@@ -311,6 +311,7 @@ void HelpSystem::ShowHelp(wxWindow *parent,
                           bool bModal)
 {
    wxString localHelpPage;
+   FilePath localHelpPage;
    wxString webHelpPath;
    wxString webHelpPage;
    wxString releasePageName;
