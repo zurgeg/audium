@@ -29,7 +29,10 @@ public:
       const TranslatableString & dlogTitle,
       const TranslatableString & message,
       const wxString & helpPage,
+<<<<<<< HEAD
       const ManualPageID & helpPage,
+=======
+>>>>>>> parent of cfbdd2d22 (Type alias ManualPageID for wxString used in many places...)
       const wxString & log,
       const bool Close = true, const bool modal = true);
 
