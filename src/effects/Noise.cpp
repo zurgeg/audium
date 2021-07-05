@@ -91,9 +91,9 @@ TranslatableString EffectNoise::GetDescription()
    return XO("Generates one of three different types of noise");
 }
 
-ManualPageID EffectNoise::ManualPage()
+wxString EffectNoise::ManualPage()
 {
-   return L"Noise";
+   return wxT("Noise");
 }
 
 // EffectDefinitionInterface implementation

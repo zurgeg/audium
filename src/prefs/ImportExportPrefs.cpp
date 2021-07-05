@@ -43,7 +43,7 @@ TranslatableString ImportExportPrefs::GetDescription()
    return XO("Preferences for ImportExport");
 }
 
-ManualPageID ImportExportPrefs::HelpPageName()
+wxString ImportExportPrefs::HelpPageName()
 {
    return "Import_-_Export_Preferences";
 }

@@ -115,9 +115,9 @@ TranslatableString EffectCompressor::GetDescription()
    return XO("Compresses the dynamic range of audio");
 }
 
-ManualPageID EffectCompressor::ManualPage()
+wxString EffectCompressor::ManualPage()
 {
-   return L"Compressor";
+   return wxT("Compressor");
 }
 
 // EffectDefinitionInterface implementation

@@ -110,9 +110,9 @@ TranslatableString EffectDtmf::GetDescription()
    return XO("Generates dual-tone multi-frequency (DTMF) tones like those produced by the keypad on telephones");
 }
 
-ManualPageID EffectDtmf::ManualPage()
+wxString EffectDtmf::ManualPage()
 {
-   return L"DTMF_Tones";
+   return wxT("DTMF_Tones");
 }
 
 // EffectDefinitionInterface implementation

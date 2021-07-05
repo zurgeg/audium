@@ -559,7 +559,7 @@ void ScreenshotBigDialog::OnClose(wxCommandEvent &  WXUNUSED(event))
 
 void ScreenshotBigDialog::OnGetURL(wxCommandEvent & WXUNUSED(event))
 {
-   HelpSystem::ShowHelp(this, L"Screenshot");
+   HelpSystem::ShowHelp(this, wxT("Screenshot"));
 }
 
 void ScreenshotBigDialog::OnUIUpdate(wxUpdateUIEvent &  WXUNUSED(event))

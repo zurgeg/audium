@@ -288,7 +288,7 @@ TranslatableString TracksPrefs::GetDescription()
    return XO("Preferences for Tracks");
 }
 
-ManualPageID TracksPrefs::HelpPageName()
+wxString TracksPrefs::HelpPageName()
 {
    return "Tracks_Preferences";
 }

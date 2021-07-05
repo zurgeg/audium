@@ -150,9 +150,9 @@ TranslatableString EffectChangePitch::GetDescription()
    return XO("Changes the pitch of a track without changing its tempo");
 }
 
-ManualPageID EffectChangePitch::ManualPage()
+wxString EffectChangePitch::ManualPage()
 {
-   return L"Change_Pitch";
+   return wxT("Change_Pitch");
 }
 
 // EffectDefinitionInterface implementation

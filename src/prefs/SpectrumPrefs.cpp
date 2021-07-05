@@ -77,7 +77,7 @@ TranslatableString SpectrumPrefs::GetDescription()
    return XO("Preferences for Spectrum");
 }
 
-ManualPageID SpectrumPrefs::HelpPageName()
+wxString SpectrumPrefs::HelpPageName()
 {
    // Currently (May2017) Spectrum Settings is the only preferences
    // we ever display in a dialog on its own without others.

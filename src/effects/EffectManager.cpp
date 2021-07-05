@@ -135,7 +135,7 @@ TranslatableString EffectManager::GetCommandDescription(const PluginID & ID)
    return {};
 }
 
-ManualPageID EffectManager::GetCommandUrl(const PluginID & ID)
+wxString EffectManager::GetCommandUrl(const PluginID & ID)
 {
    Effect* pEff = GetEffect(ID);
    if( pEff )
@@ -190,8 +190,7 @@ void EffectManager::GetCommandDefinition(const PluginID & ID, const CommandConte
       S.EndArray();
       S.EndField();
    }
-   // use GET() to expose some details to macro programming users
-   S.AddItem( GetCommandUrl( ID ).GET(), "url" );
+   S.AddItem( GetCommandUrl( ID ), "url" );
    // The tip is a translated string!
    S.AddItem( GetCommandTip( ID ).Translation(), "tip" );
    S.EndStruct();

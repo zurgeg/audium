@@ -74,7 +74,7 @@ TranslatableString DevicePrefs::GetDescription()
    return XO("Preferences for Device");
 }
 
-ManualPageID DevicePrefs::HelpPageName()
+wxString DevicePrefs::HelpPageName()
 {
    return "Devices_Preferences";
 }

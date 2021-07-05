@@ -149,9 +149,9 @@ TranslatableString EffectReverb::GetDescription()
    return XO("Adds ambience or a \"hall effect\"");
 }
 
-ManualPageID EffectReverb::ManualPage()
+wxString EffectReverb::ManualPage()
 {
-   return L"Reverb";
+   return wxT("Reverb");
 }
 
 // EffectDefinitionInterface implementation

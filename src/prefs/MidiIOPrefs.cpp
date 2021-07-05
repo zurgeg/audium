@@ -75,7 +75,7 @@ TranslatableString MidiIOPrefs::GetDescription()
    return XO("Preferences for MidiIO");
 }
 
-ManualPageID MidiIOPrefs::HelpPageName()
+wxString MidiIOPrefs::HelpPageName()
 {
    return "MIDI_Devices_Preferences";
 }

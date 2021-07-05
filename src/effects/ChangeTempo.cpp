@@ -124,9 +124,9 @@ TranslatableString EffectChangeTempo::GetDescription()
    return XO("Changes the tempo of a selection without changing its pitch");
 }
 
-ManualPageID EffectChangeTempo::ManualPage()
+wxString EffectChangeTempo::ManualPage()
 {
-   return L"Change_Tempo";
+   return wxT("Change_Tempo");
 }
 
 // EffectDefinitionInterface implementation

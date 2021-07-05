@@ -41,7 +41,7 @@ TranslatableString TracksBehaviorsPrefs::GetDescription()
    return XO("Preferences for TracksBehaviors");
 }
 
-ManualPageID TracksBehaviorsPrefs::HelpPageName()
+wxString TracksBehaviorsPrefs::HelpPageName()
 {
    return "Tracks_Behaviors_Preferences";
 }

@@ -82,7 +82,7 @@ TranslatableString ThemePrefs::GetDescription()
    return XO("Preferences for Theme");
 }
 
-ManualPageID ThemePrefs::HelpPageName()
+wxString ThemePrefs::HelpPageName()
 {
    return "Theme_Preferences";
 }

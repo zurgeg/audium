@@ -101,9 +101,9 @@ TranslatableString EffectTimeScale::GetDescription()
    return XO("Allows continuous changes to the tempo and/or pitch");
 }
 
-ManualPageID EffectTimeScale::ManualPage()
+wxString EffectTimeScale::ManualPage()
 {
-   return L"Sliding_Stretch";
+   return wxT("Sliding_Stretch");
 }
 
 // EffectDefinitionInterface implementation

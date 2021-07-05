@@ -59,7 +59,7 @@ private:
    void OnHelp(wxCommandEvent& event);
 
    wxRadioBox* mRadioBox;
-   ManualPageID mHelpPage;
+   wxString mHelpPage;
 
    DECLARE_EVENT_TABLE()
 };
@@ -145,7 +145,7 @@ MultiDialog::MultiDialog(wxWindow * pParent,
             auto pButton = S.Id(wxID_OK)
                .AddButton(XXO("OK"), wxALIGN_CENTER, !log);
 
-            if (!mHelpPage.empty()) {
+            if (!mHelpPage.IsEmpty()) {
                auto pHelpBtn = S.Id(wxID_HELP)
                   .AddBitmapButton(theTheme.Bitmap(bmpHelpIcon), wxALIGN_CENTER, false);
                pHelpBtn->SetToolTip(XO("Help").Translation());

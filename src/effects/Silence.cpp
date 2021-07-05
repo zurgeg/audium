@@ -50,9 +50,9 @@ TranslatableString EffectSilence::GetDescription()
    return XO("Creates audio of zero amplitude");
 }
 
-ManualPageID EffectSilence::ManualPage()
+wxString EffectSilence::ManualPage()
 {
-   return L"Silence";
+   return wxT("Silence");
 }
 
 

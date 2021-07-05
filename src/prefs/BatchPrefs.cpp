@@ -45,7 +45,7 @@ TranslatableString BatchPrefs::GetDescription()
    return XO("Preferences for Batch");
 }
 
-ManualPageID BatchPrefs::HelpPageName()
+wxString BatchPrefs::HelpPageName()
 {
    return  "Batch_Preferences";
 }

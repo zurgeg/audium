@@ -222,7 +222,7 @@ void ApplyMacroDialog::PopulateMacros()
 
 void ApplyMacroDialog::OnHelp(wxCommandEvent & WXUNUSED(event))
 {
-   const auto &page = GetHelpPageName();
+   wxString page = GetHelpPageName();
    HelpSystem::ShowHelp(this, page, true);
 }
 

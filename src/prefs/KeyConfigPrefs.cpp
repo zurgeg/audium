@@ -117,7 +117,7 @@ TranslatableString KeyConfigPrefs::GetDescription()
    return XO("Preferences for KeyConfig");
 }
 
-ManualPageID KeyConfigPrefs::HelpPageName()
+wxString KeyConfigPrefs::HelpPageName()
 {
    return "Keyboard_Preferences";
 }

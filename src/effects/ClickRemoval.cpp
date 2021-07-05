@@ -93,9 +93,9 @@ TranslatableString EffectClickRemoval::GetDescription()
    return XO("Click Removal is designed to remove clicks on audio tracks");
 }
 
-ManualPageID EffectClickRemoval::ManualPage()
+wxString EffectClickRemoval::ManualPage()
 {
-   return L"Click_Removal";
+   return wxT("Click_Removal");
 }
 
 // EffectDefinitionInterface implementation

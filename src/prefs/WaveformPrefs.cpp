@@ -66,7 +66,7 @@ TranslatableString WaveformPrefs::GetDescription()
    return XO("Preferences for Waveforms");
 }
 
-ManualPageID WaveformPrefs::HelpPageName()
+wxString WaveformPrefs::HelpPageName()
 {
    return "Waveform_Preferences";
 }

@@ -47,7 +47,7 @@ TranslatableString PlaybackPrefs::GetDescription()
    return XO("Preferences for Playback");
 }
 
-ManualPageID PlaybackPrefs::HelpPageName()
+wxString PlaybackPrefs::HelpPageName()
 {
    return "Playback_Preferences";
 }

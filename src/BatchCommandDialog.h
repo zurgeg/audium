@@ -42,7 +42,7 @@ class MacroCommandDialog final : public wxDialogWrapper {
    void OnCancel(wxCommandEvent &event);
    void OnHelp(wxCommandEvent &event);
    void OnItemSelected(wxListEvent &event);
-   ManualPageID GetHelpPageName() { return L"Scripting Reference" ; }
+   wxString GetHelpPageName() { return wxT("Scripting Reference") ; }
 
    void ValidateChoices();
    void PopulateCommandList();

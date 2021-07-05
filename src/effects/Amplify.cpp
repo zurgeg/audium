@@ -99,9 +99,9 @@ TranslatableString EffectAmplify::GetDescription()
    return XO("Increases or decreases the volume of the audio you have selected");
 }
 
-ManualPageID EffectAmplify::ManualPage()
+wxString EffectAmplify::ManualPage()
 {
-   return L"Amplify";
+   return wxT("Amplify");
 }
 
 // EffectDefinitionInterface implementation

@@ -62,7 +62,7 @@ TranslatableString RecordingPrefs::GetDescription()
    return XO("Preferences for Recording");
 }
 
-ManualPageID RecordingPrefs::HelpPageName()
+wxString RecordingPrefs::HelpPageName()
 {
    return "Recording_Preferences";
 }

@@ -232,8 +232,5 @@ struct CommandIdTag;
 using CommandID = TaggedIdentifier< CommandIdTag, false >;
 using CommandIDs = std::vector<CommandID>;
 
-struct ManualPageIDTag;
-using ManualPageID = TaggedIdentifier< ManualPageIDTag >;
-
 #endif
 

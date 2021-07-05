@@ -30,7 +30,7 @@ class WarningsPrefs final : public PrefsPanel
    TranslatableString GetDescription() override;
 
    bool Commit() override;
-   ManualPageID HelpPageName() override;
+   wxString HelpPageName() override;
 
  private:
    void Populate();

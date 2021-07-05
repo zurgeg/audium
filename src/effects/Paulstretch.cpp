@@ -117,9 +117,9 @@ TranslatableString EffectPaulstretch::GetDescription()
    return XO("Paulstretch is only for an extreme time-stretch or \"stasis\" effect");
 }
 
-ManualPageID EffectPaulstretch::ManualPage()
+wxString EffectPaulstretch::ManualPage()
 {
-   return L"Paulstretch";
+   return wxT("Paulstretch");
 }
 
 // EffectDefinitionInterface implementation

@@ -387,13 +387,12 @@ const wxString VerCheckArgs(){
 }
 
 // Text of hyperlink to check versions.
-const wxString VerCheckHtml()
-{
+const wxString VerCheckHtml(){
    wxStringOutputStream o;
    wxTextOutputStream s(o);
    s
       << "<center>[["
-      << VerCheckUrl().GET()
+      << VerCheckUrl()
       << "|"
       << XO("Check Online")
       << "]]</center>\n";
@@ -401,8 +400,7 @@ const wxString VerCheckHtml()
 }
 
 // Url with Version check args attached.
-const URLString VerCheckUrl()
-{
+const wxString VerCheckUrl(){
    //The version we intend to use for live Audacity.
 #define VER_CHECK_URL "https://www.audacityteam.org/download/?"
 //For testing of our scriptlet.

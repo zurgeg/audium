@@ -75,9 +75,9 @@ TranslatableString EffectRepeat::GetDescription()
    return XO("Repeats the selection the specified number of times");
 }
 
-ManualPageID EffectRepeat::ManualPage()
+wxString EffectRepeat::ManualPage()
 {
-   return L"Repeat";
+   return wxT("Repeat");
 }
 
 // EffectDefinitionInterface implementation

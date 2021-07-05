@@ -30,7 +30,7 @@ class DevicePrefs final : public PrefsPanel
    TranslatableString GetDescription() override;
 
    bool Commit() override;
-   ManualPageID HelpPageName() override;
+   wxString HelpPageName() override;
    void PopulateOrExchange(ShuttleGui & S) override;
 
  private:

@@ -27,7 +27,7 @@ public:
    ~BatchPrefs();
    ComponentInterfaceSymbol GetSymbol() override;
    TranslatableString GetDescription() override;
-   ManualPageID HelpPageName() override;
+   wxString HelpPageName() override;
 
    bool Commit() override;
    void PopulateOrExchange(ShuttleGui & S) override;

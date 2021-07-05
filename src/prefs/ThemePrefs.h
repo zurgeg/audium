@@ -36,7 +36,7 @@ class ThemePrefs final : public PrefsPanel
    TranslatableString GetDescription() override;
 
    bool Commit() override;
-   ManualPageID HelpPageName() override;
+   wxString HelpPageName() override;
 
    static void ApplyUpdatedImages();
 

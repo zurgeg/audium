@@ -118,9 +118,9 @@ TranslatableString EffectAutoDuck::GetDescription()
    return XO("Reduces (ducks) the volume of one or more tracks whenever the volume of a specified \"control\" track reaches a particular level");
 }
 
-ManualPageID EffectAutoDuck::ManualPage()
+wxString EffectAutoDuck::ManualPage()
 {
-   return L"Auto_Duck";
+   return wxT("Auto_Duck");
 }
 
 // EffectDefinitionInterface implementation

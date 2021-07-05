@@ -115,9 +115,9 @@ TranslatableString EffectPhaser::GetDescription()
    return XO("Combines phase-shifted signals with the original signal");
 }
 
-ManualPageID EffectPhaser::ManualPage()
+wxString EffectPhaser::ManualPage()
 {
-   return L"Phaser";
+   return wxT("Phaser");
 }
 
 // EffectDefinitionInterface implementation

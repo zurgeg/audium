@@ -84,7 +84,7 @@ TranslatableString ExtImportPrefs::GetDescription()
    return XO("Preferences for ExtImport");
 }
 
-ManualPageID ExtImportPrefs::HelpPageName()
+wxString ExtImportPrefs::HelpPageName()
 {
    return "Extended_Import_Preferences";
 }

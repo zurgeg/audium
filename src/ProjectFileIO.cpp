@@ -19,7 +19,6 @@ Paul Licameli split from AudacityProject.cpp
 #include <wx/xml/xml.h>
 
 #include "ActiveProjects.h"
-#include "CodeConversions.h"
 #include "DBConnection.h"
 #include "Project.h"
 #include "ProjectFileIORegistry.h"
@@ -2317,8 +2316,7 @@ void ProjectFileIO::ShowError(wxWindow *parent,
                               const TranslatableString &message,
                               const wxString &helpPage)
 {
-   ShowExceptionDialog(parent, dlogTitle, message, helpPage, true,
-                   audacity::ToWString(GetLastLog()));
+   ShowExceptionDialog(parent, dlogTitle, message, helpPage, true, GetLastLog());
 }
 
 const TranslatableString &ProjectFileIO::GetLastError() const

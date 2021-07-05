@@ -67,9 +67,9 @@ TranslatableString EffectEcho::GetDescription()
    return XO("Repeats the selected audio again and again");
 }
 
-ManualPageID EffectEcho::ManualPage()
+wxString EffectEcho::ManualPage()
 {
-   return L"Echo";
+   return wxT("Echo");
 }
 
 // EffectDefinitionInterface implementation

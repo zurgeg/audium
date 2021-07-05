@@ -139,11 +139,11 @@ TranslatableString EffectToneGen::GetDescription()
       : XO("Generates a constant frequency tone of one of four types");
 }
 
-ManualPageID EffectToneGen::ManualPage()
+wxString EffectToneGen::ManualPage()
 {
    return mChirp
-      ? L"Chirp"
-      : L"Tone";
+      ? wxT("Chirp")
+      : wxT("Tone");
 }
 
 // EffectDefinitionInterface implementation
