@@ -14,7 +14,6 @@
 
 
 
-#include <string>
 #include <wx/defs.h>
 #include <wx/msgdlg.h> // to inherit
 #include "wxPanelWrapper.h" // to inherit
@@ -29,14 +28,15 @@ public:
    ErrorDialog(wxWindow *parent,
       const TranslatableString & dlogTitle,
       const TranslatableString & message,
+      const wxString & helpPage,
       const ManualPageID & helpPage,
-      const std::wstring & log,
+      const wxString & log,
       const bool Close = true, const bool modal = true);
 
    virtual ~ErrorDialog(){}
 
 private:
-   ManualPageID dhelpPage;
+   wxString dhelpPage;
    bool dClose;
    bool dModal;
 
@@ -51,9 +51,9 @@ AUDACITY_DLL_API
 void ShowErrorDialog(wxWindow *parent,
                      const TranslatableString &dlogTitle,
                      const TranslatableString &message,
-                     const ManualPageID &helpPage,
+                     const wxString &helpPage,
                      bool Close = true,
-                     const std::wstring &log = {});
+                     const wxString &log = {});
 
 /// Displays an error dialog, possibly allowing to send error report.
 AUDACITY_DLL_API
@@ -66,9 +66,9 @@ void ShowExceptionDialog(
 void ShowModelessErrorDialog(wxWindow *parent,
                      const TranslatableString &dlogTitle,
                      const TranslatableString &message,
-                     const ManualPageID &helpPage,
+                     const wxString &helpPage,
                      bool Close = true,
-                     const std::wstring &log = {});
+                     const wxString &log = {});
 
 #include <wx/textdlg.h> // to inherit
 
